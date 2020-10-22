@@ -1,0 +1,14 @@
+{
+  "name": "universaldiscordbot",
+  "version": "1.0.0",
+  "description": "Meant to be a base for future bot development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Not Nerty <trentonr@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.4.0"
+  }
+}
