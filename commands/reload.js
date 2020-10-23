@@ -4,6 +4,10 @@ module.exports = {
     usage: '[command]',
     args: true,
 	execute(message, args) {
+        if (!message.member.hasPermission("ADMINISTRATOR")) {
+            return message.reply("you don't have permission to use this command.");
+        }
+
         const commandName = args[0].toLowerCase();
         const command = message.client.commands.get(commandName) || message.client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
